@@ -1,5 +1,5 @@
-tree-sitter
-tree-sitter.exe
+bin/
+tree-sitter*
 *.gz
 *.tgz
 LICENSE

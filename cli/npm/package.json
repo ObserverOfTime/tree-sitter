@@ -9,10 +9,30 @@
   },
   "description": "CLI for generating fast incremental parsers",
   "keywords": [
-    "parser",
-    "lexer"
+    "parsing",
+    "incremental"
   ],
-  "main": "lib/api/index.js",
+  "files": [
+    "*.js",
+    "dsl.d.ts",
+    "bin/*"
+  ],
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "cpu": [
+    "x64",
+    "x86",
+    "arm64",
+    "arm",
+    "ia32",
+    "ppc64"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "install": "node install.js",
     "prepack": "cp ../../LICENSE ../README.md .",
