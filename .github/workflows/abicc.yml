@@ -67,7 +67,7 @@ jobs:
           new-dump: abi-dump-new/ABI.dump
           old-version: ${{github.event.pull_request.base.sha}}
           new-version: ${{github.event.pull_request.head.sha}}
-          args: -check-private-abi
+          args: -check-private-abi -header api.h
       - name: Post-process HTML report
         id: post-process
         uses: ObserverOfTime/abi-compatibility-action/process@v1
